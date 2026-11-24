@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Diabetes" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#00696E</item>
+        <item name="android:windowBackground">#F7FBFB</item>
+    </style>
+</resources>
