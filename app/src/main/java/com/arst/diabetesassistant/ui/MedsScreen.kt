@@ -64,7 +64,7 @@ fun MedsScreen(data: AppData, modifier: Modifier) {
         ) {
             if (data.meds.isEmpty()) item { Text(stringResource(R.string.no_meds_yet)) }
             items(data.meds, key = { it.id }) { m ->
-                Card(Modifier.fillMaxWidth(), onClick = { editing = m }) {
+                Card(onClick = { editing = m }, modifier = Modifier.fillMaxWidth()) {
                     Row(Modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
                         Column(Modifier.weight(1f)) {
                             Text((if (m.type == MedType.INSULIN) "💉 " else "💊 ") + m.name,
